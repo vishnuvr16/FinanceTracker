@@ -19,7 +19,7 @@ async function authToken(req, res, next) {
     }
 
     // ? verify token
-    jwt.verify(token, "financelogin", function (err, decoded) {
+    jwt.verify(token, process.env.TOKEN_SECRET, function (err, decoded) {
       if (err) {
         console.log(err);
       }
