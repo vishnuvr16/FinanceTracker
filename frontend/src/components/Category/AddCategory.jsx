@@ -11,6 +11,7 @@ import { SiDatabricks } from "react-icons/si";
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { addCategoryAPI } from "../../services/category/categoryService";
+import AlertMessage from "../Alert/AlertMessage";
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Category name is required"),
