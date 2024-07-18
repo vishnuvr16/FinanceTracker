@@ -21,7 +21,7 @@ connectDB().then(() => {
 const corsOptions = {
   origin: ["https://finance-tracker-orcin.vercel.app"],
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 //   !Middlewares
 app.use(express.json()); //? pass incoming json data
