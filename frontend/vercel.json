@@ -1,9 +1,0 @@
-{
-  "verson": 2,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/"
-    }
-  ]
-}
