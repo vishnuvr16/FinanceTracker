@@ -19,7 +19,7 @@ connectDB().then(() => {
 
 // ! cors config
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://finance-tracker-orcin.vercel.app/"],
 };
 app.use(cors(corsOptions));
 
